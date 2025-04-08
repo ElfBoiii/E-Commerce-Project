@@ -214,7 +214,7 @@ button:active {
     margin-bottom: 16px;
 }
 
-/* FEATURES */
+/* FEATURES */ /* LATEST BOOKS */
 
 #features {
     padding-top: 8vw;
@@ -223,6 +223,7 @@ button:active {
 
 .books {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .book {
@@ -258,7 +259,7 @@ button:active {
     cursor: no-drop;
 }
 
-.book_ratings {
+.book_rating {
     margin-bottom: 8px;
     color: #fabf2a;
 
@@ -268,4 +269,25 @@ button:active {
     text-decoration: line-through;
     padding-right: 6px;
     color: #bfbfbf;
+}
+
+/* EXPLORE */
+
+#explore {
+    background-color:rgba(115, 66, 214, 0.1);
+    padding: 56px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore_row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn--explore {
+    max-width: 300px;
+    margin: 0 auto;
 }
