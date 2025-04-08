@@ -263,7 +263,7 @@ button:active {
 
 .highlight_wrapper {
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .highlight {
@@ -296,6 +296,7 @@ button:active {
 .highlight_subtitle {
     font-size: 20px;
     margin-bottom: 16px;
+    text-align: center;
 }
 
 /* FEATURES */ /* LATEST BOOKS */
@@ -404,6 +405,30 @@ footer {
     padding: 0 8px;
 }
 
+/* SMALL PHONES, TABLETS, LARGE SMARTPHONES */
+
+@media (max-width: 768px) {
+    .header_description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    button {
+        font-size: 18px;
+    }
+
+    .book {
+        width: 50%;
+    }
+}
+/* SMALL PHONES, LARGE SMARTPHONES */
 @media (max-width: 550px) {
     .nav_links {
         display: none;
@@ -411,5 +436,14 @@ footer {
 
     .btn_menu {
         display: block;
+    }
+
+    .highlight {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .highlight:not(:last-child) {
+        margin-bottom: 24px;
     }
 }
