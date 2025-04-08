@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/f26ac9e8de.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <section id="landing_page">
@@ -27,7 +28,26 @@
               <a href="#features" class="nav_link nav_link--primary">Books</a>
             </li>
           </ul>
+        <button class="btn_menu" onclick="openMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu_backdrop">
+          <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <ul class="menu_links">
+            <li class="menu_list">
+              <a href="#" class="menu_link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu_list">
+              <a href="#features" class="menu_link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu_list">
+              <a href="" class="menu_link no-cursor" onclick="closeMenu()">Contact</a>
+            </li>
+          </ul>
         </div>
+    </div>
       </nav>
       <header>
         <div class="header_container">
@@ -36,7 +56,9 @@
             <h2>
               Find your dream book with <span class="text-purple">Library</span>
             </h2>
+            <a href="#features">
             <button class="btn">Browse Books</button>
+            </a>
           </div>
           <figure class="header_img--wrapper">
             <img src="./assets/Undraw_Books.svg" alt="Books" />
@@ -301,29 +323,29 @@
               Explore More <span class="text-purple">Books</span>
             </h2>
             <a href="#features">
-            <button class="btn btn--explore">Browse Books</button>
+              <button class="btn btn--explore">Browse Books</button>
             </a>
           </div>
         </div>
       </section>
     </main>
     <footer>
-        <div class="container">
-            <div class="row row_column">
-                <a href="#">
-                <figure class="footer_logo">
-                    <img src="./assets/Library.svg" class="footer_logo-img" alt="">
-                </figure>
-                </a>
-                <div class="footer_list">
-                    <a href="#" class="footer_link">Home</a>
-                    <a href="#" class="footer_link">About</a>
-                    <a href="#features" class="footer_link">Books</a>
-                    <a href="" class="footer_link no-cursor">Contact</a>
-                </div>
-                <div class="footer_copyright">Copyright &copy; 2025 Library</div>
-            </div>
+      <div class="container">
+        <div class="row row_column">
+          <a href="#">
+            <figure class="footer_logo">
+              <img src="./assets/Library.svg" class="footer_logo-img" alt="" />
+            </figure>
+          </a>
+          <div class="footer_list">
+            <a href="#" class="footer_link">Home</a>
+            <a href="#" class="footer_link">About</a>
+            <a href="#features" class="footer_link">Books</a>
+            <a href="" class="footer_link no-cursor">Contact</a>
+          </div>
+          <div class="footer_copyright">Copyright &copy; 2025 Library</div>
         </div>
+      </div>
     </footer>
   </body>
 </html>
