@@ -196,6 +196,29 @@ select {
     justify-content: center;
     padding-top: 60px;
     font-size: 60px;
+    color: #7342d6;
+    height: 100vh;
+}
+
+.books_loading-spinner {
+    display: none;
+}
+
+.books_loading .books_loading-spinner {
+    display: block;
+}
+
+.fa-spinner {
+    animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* HEADER */
